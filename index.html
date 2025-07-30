@@ -18,17 +18,30 @@
       <label for="prenom">Prénom</label>
       <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
 
-       <label for="filiere">Filière</label>
-      <input type="text" id="filiere" name="filiere" placeholder="Ex : Réseaux & Télécoms" required>
-      
+      <label for="filiere">Filière</label>
+      <select id="filiere" name="filiere" required>
+        <option value="">-- Choisissez une filière --</option>
+        <option value="RT">Réseaux & Télécoms</option>
+        <option value="GL">Génie Logiciel</option>
+        <option value="IG">Informatique de Gestion</option>
+        <option value="SRI">Sécurité des Réseaux Informatiques</option>
+        <option value="AUTRE">Autre</option>
+      </select>
+
+      <label for="annee">Année académique</label>
+      <input type="text" id="annee" name="annee" placeholder="Ex : 2024-2025" required>
+
+      <label for="datetime">Date et Heure</label>
+      <input type="datetime-local" id="datetime" name="datetime" required>
+
       <label for="email">Adresse mail</label>
       <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
 
       <label for="mdp">Entrer mot de passe</label>
-      <input type="password" id="mdp" name="mdp" placeholder="Ex : Entrer mot de passe" required>
+      <input type="password" id="mdp" name="mdp" placeholder="Entrer mot de passe" required>
 
       <label for="mdpc">Confirmation mot de passe</label>
-      <input type="password" id="mdpc" name="mdpc" placeholder="Ex : confirmation mot de passe" required>
+      <input type="password" id="mdpc" name="mdpc" placeholder="Confirmation mot de passe" required>
 
       <button type="submit" name="action">Envoyer</button>
     </form>
