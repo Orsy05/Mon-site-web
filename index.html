@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulaire Étudiant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <form method='POST' class="formulaire-etudiant">
+      <h2>Formulaire Étudiant</h2>
+
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+
+       <label for="filiere">Filière</label>
+      <input type="text" id="filiere" name="filiere" placeholder="Ex : Réseaux & Télécoms" required>
+      
+      <label for="email">Adresse mail</label>
+      <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+
+      <label for="mdp">Entrer mot de passe</label>
+      <input type="password" id="mdp" name="mdp" placeholder="Ex : Entrer mot de passe" required>
+
+      <label for="mdpc">Confirmation mot de passe</label>
+      <input type="password" id="mdpc" name="mdpc" placeholder="Ex : confirmation mot de passe" required>
+
+      <button type="submit" name="action">Envoyer</button>
+    </form>
+  </div>
+
+</body>
+</html>
